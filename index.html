@@ -7,13 +7,21 @@
     <title>Olivia Christmas List</title>
     <style>
       body {
-        padding-left: 50px;
-        padding-right: 50px;
+        max-width: 800px;
+        display: block;
+        margin: 25px auto;
       }
+
+      header {
+        background-image: url("https://images.pexels.com/photos/3334477/pexels-photo-3334477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 175px;
+      }
+
       h1 {
         text-align: center;
-        padding-bottom: 250px;
-        padding-top: 75px;
+        padding-bottom: 5px;
       }
 
       h2 {
@@ -22,7 +30,6 @@
 
       hr {
         padding: 2px;
-        margin-bottom: 40px;
         background-color: rgba(204, 44, 79, 0.838);
       }
 
@@ -50,30 +57,26 @@
       }
 
       .header-img {
-        background-image: url("https://images.pexels.com/photos/3334477/pexels-photo-3334477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-repeat: no-repeat;
-        background-size: cover;
         border-radius: 10px;
+        max-width: 50vh;
       }
 
       .image-gallery {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-gap: 35px;
+        padding-top: 15px;
       }
 
       @media (max-width: 600px) {
-        .header-img {
-          background-image: url("https://images.pexels.com/photos/3334477/pexels-photo-3334477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-          background-repeat: no-repeat;
-          background-size: cover;
-          max-height: 100px;
+        header {
+          padding-bottom: 100px;
         }
 
         h1 {
           text-align: center;
           padding-top: 5px;
-          font-size: 19px;
+          font-size: 23px;
         }
 
         h2 {
@@ -83,10 +86,8 @@
     </style>
   </head>
   <body>
+    <header><h1>Olivia's Christmas List</h1></header>
     <div class="container">
-      <div class="header-img">
-        <h1>Olivia's Christmas List</h1>
-      </div>
       <hr />
       <h2>Shoes size 5.5 youth, 7.5 women</h2>
       <h2>Shirts and Sweatpants size S women</h2>
